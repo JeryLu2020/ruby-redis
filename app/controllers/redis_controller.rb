@@ -14,9 +14,9 @@ class RedisController < ApplicationController
     print $redis.ping()
     print "Connected\n"
 
-    data = {"sender" => "Frank Pan" }
+    data = {"sender" => "Jery Lu" }
 
-    msg = 'hello'
+    msg = 'hello from jery'
 
     loop do
         sleep 10
