@@ -1,10 +1,14 @@
 development:
-  adapter: async
+  dapter: redis
+  url: redis://jery-redis.redis.cache.windows.net:6380/0
+  channel_prefix: railstasks_production
 
 test:
-  adapter: async
+  adapter: redis
+  url: redis://jery-redis.redis.cache.windows.net:6380/0
+  channel_prefix: railstasks_production
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://jery-redis.redis.cache.windows.net:6380/0
   channel_prefix: railstasks_production

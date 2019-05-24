@@ -1,0 +1,2 @@
+class Redis < ApplicationRecord
+end
