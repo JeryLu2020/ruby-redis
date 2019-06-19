@@ -23,9 +23,9 @@ default: &default
 
 development:
   <<: *default
-  host: jerypostgre.postgres.database.azure.com
-  database: sampledb_development
-  username: jery@jerypostgre
+  host: jery-postgresql.postgres.database.azure.com
+  database: railstasks_production
+  username: jery@jery-postgresql
   password: Qazxsw521
 
 # Warning: The database defined as "test" will be erased and
@@ -33,9 +33,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  host: jerypostgre.postgres.database.azure.com
-  database: sampledb_test
-  username: jery@jerypostgre
+  host: jery-postgresql.postgres.database.azure.com
+  database: railstasks_production
+  username: jery@jery-postgresql
   password: Qazxsw521
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -59,7 +59,7 @@ test:
 #
 production:
   <<: *default
-  host: jerypostgre.postgres.database.azure.com
-  database: sampledb_production
-  username: jery@jerypostgre
+  host: jery-postgresql.postgres.database.azure.com
+  database: railstasks_production
+  username: jery@jery-postgresql
   password: Qazxsw521

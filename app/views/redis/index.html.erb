@@ -1,4 +1,28 @@
-<%- model_class = Redis -%>
-<div class="page-header">
-  <h1>Start subscribe Redis</h1>
-</div>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<h1>Redis#index</h1>
+<p>Find me in app/views/redis/index.html</p>
+
+
+
+
+
+
+<button id='btn'>Click to send message to Redis</button>
+
+<p> <%= @message %> </p>
+
+<script>
+    $( "#btn" ).click(function() {
+        $.ajax({
+            url: "/api/v1/posts",
+            data: {
+            },
+            success: function( result ) {
+                console.log('success');
+            }
+        });
+    });
+</script>
